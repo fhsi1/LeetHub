@@ -38,7 +38,7 @@ class Solution {
                         oranges -= 1
                         grid[rot.row][rot.col + 1] = 2
                         moreRot = true
-                        rotting.append(Fruit(row: rot.row, col: rot.col+1))
+                        rotting.append(Fruit(row: rot.row, col: rot.col + 1))
                     }                    
                 }
                 if rot.row > 0 {
