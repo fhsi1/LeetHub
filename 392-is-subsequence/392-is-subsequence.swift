@@ -7,9 +7,9 @@ class Solution {
         var index = 0
         var sArray = Array(s)
         
-        for eachT in t
+        for tEL in t
         {
-          if sArray[index] == eachT
+          if sArray[index] == tEL
           {
               index += 1
               if index == sArray.count
