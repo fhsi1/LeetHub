@@ -11,7 +11,7 @@ class Solution {
 
             while (r - l + 1) - dict.values.max()! > k {
                 dict[array[l], default: 0] -= 1
-                l+=1
+                l += 1
             }
 
             result = max(result, r - l + 1)
