@@ -9,7 +9,6 @@ class Solution {
         
         stones.sort()
         while stones.count > 1 {
-            print(stones)
             let last = stones.removeLast()
             let secondLast = stones.removeLast()
             if last > secondLast {
