@@ -9,7 +9,7 @@ class Solution {
         let sortedDict = dict.sorted { $0.value > $1.value}
         var count = 0
         var sum = 0
-        for ( _ , v) in sortedDict {
+        for (_ , v) in sortedDict {
             
             if (arr.count / 2) > sum {
                 count += 1
