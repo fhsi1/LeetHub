@@ -15,9 +15,7 @@
  */
 class Solution {
     func invertTree(_ root: TreeNode?) -> TreeNode? {
-        if root == nil {
-            return nil
-        }
+        if root == nil { return nil }
         
         let tmp = root?.right
         root?.right = invertTree(root?.left)
