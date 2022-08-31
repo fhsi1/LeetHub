@@ -1,11 +1,5 @@
 class Solution {
     func countOdds(_ low: Int, _ high: Int) -> Int {
-        var cnt = 0
-        for i in low...high {
-            if i % 2 == 1 {
-                cnt += 1
-            }
-        }
-        return cnt
+        return (low % 2 == 1) ? (1 + (high - low) / 2) : ((high - low) / 2 + (high - low) % 2)
     }
 }
