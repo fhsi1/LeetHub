@@ -5,9 +5,7 @@ class Solution {
         for op in operations {
             if op.contains("--") {
                 res -= 1
-            } else if op.contains("++") {
-                res += 1
-            }
+            } else { res += 1 }
         }
         
         return res
