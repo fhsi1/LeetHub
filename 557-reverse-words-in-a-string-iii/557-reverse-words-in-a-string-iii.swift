@@ -9,7 +9,7 @@ class Solution {
             if index != words.count-1 {
                 reversedWord += " "
             }
-            output.insert(contentsOf: reversedWord, at: output.endIndex)
+            output.append(reversedWord)
         }
         return output
     }
