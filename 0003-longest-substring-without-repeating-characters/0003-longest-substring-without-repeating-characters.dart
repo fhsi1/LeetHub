@@ -1,17 +1,18 @@
 class Solution {
   int lengthOfLongestSubstring(String s) {
-    var input = s;
     Set<String> letters = {};
     int maxSubString = 0;
-    for (var i = 0; i < input.length; i++) {
-      while (letters.contains(input[i])) {
-        letters.remove(letters.first);
+    int left = 0;
+
+    for (int right = 0; right < s.length; right++) {
+      while (letters.contains(s[right])) {
+        letters.remove(s[left]);
+        left++;
       }
-      letters.add(input[i]);
-      if (letters.length > maxSubString) {
-        maxSubString = letters.length;
-      }
+      letters.add(s[right]);
+      maxSubString = maxSubString > letters.length ? maxSubString : letters.length;
     }
+
     return maxSubString;
-  
-}}
+  }
+}
